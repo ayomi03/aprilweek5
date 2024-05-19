@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity</title>
+
+  <style>
+    /* html{
+      font-size: 10px;
+    } */
+    h3{
+      border: 1px solid;
+    }
+    #first{
+      padding: 2rem; 
+      margin:  3rem;
+    }
+    .parent{
+      font-size: 2em;
+    }
+    .child{
+      font-size: 3em;
+      border: 1px solid blue;
+    }
+    p{
+      width: 35%;
+      border: 1px solid;
+      color: blue;
+    }
+    /* #paraId{
+      color: red;
+    } */
+    .paraClass{
+      color: yellow;
+    }
+    [jumoke]{
+      color: green;
+    }
+
+    .pseudo img{
+      width: 100%;
+    }
+    .pseudo{
+      border: 2px solid green;
+      width: 150px;
+    }
+    /* .pseudo::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: black;
+      z-index: 3;
+      opacity: 0.7;
+
+    } */
+  </style>
+</head>
+<body>
+  <h3 id="first"> First heading </h3>
+  <h3> second heading </h3>
+  <h3> third heading </h3>
+
+  <div class="parent">
+    <div class="child">
+      <p id="paraId" class="paraClass" jumoke style="color: brown;"> we dey learn ems </p>
+    </div>
+  </div>
+
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+  <div class="pseudo">
+    <img src="./image.png" alt="">
+  </div>
+</body>
+</html> 
